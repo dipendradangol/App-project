@@ -125,7 +125,7 @@ function initMap() {
                 lat: 60.158334,
                 lng: 24.875831
             },
-            content: '<h6> Kaizun Bistro</h6><h3>Address: Gyldenintie 2, open 21-04</h6>'
+            content: '<h6> Kaizun Bistro</h6><h6>Address: Gyldenintie 2, open 21-04</h6>'
         },
         {
             coords: {
