@@ -168,6 +168,7 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: props.coords,
             map: map,
+            animation: google.maps.Animation.DROP,
             //icon:props.iconImage
         });
 
@@ -183,8 +184,11 @@ function initMap() {
                 content: props.content
             });
 
-            marker.addListener('click', function () {
+            marker.addListener('mouseover', function () {
                 infoWindow.open(map, marker);
+            });
+            marker.addListener('mouseout', function () {
+                infoWindow.close(map, marker);
             });
         }
     }
